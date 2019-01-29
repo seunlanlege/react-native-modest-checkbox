@@ -61,7 +61,8 @@ class Checkbox extends PureComponent {
     return (
       <Container
         style={[styles.container, containerStyle]}
-        onPress={this.handleToggleChecked}
+		onPress={this.handleToggleChecked}
+		disabled={this.props.disabled}
       >
         <View style={[styles.container, containerStyle]}>
           {labelBefore ? (
